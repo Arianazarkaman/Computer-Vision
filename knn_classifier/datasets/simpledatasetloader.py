@@ -8,9 +8,9 @@ class SimpleDatasetLoader:
         # store the image preprocessor
         self.preprocessors = preprocessors
         # if the preprocessors are None, initialize them as an
-    # empty list
-    if self.preprocessors is None:
-        self.preprocessors = []
+        # empty list
+        if self.preprocessors is None:
+            self.preprocessors = []
 
     def load(self, imagePaths, verbose=-1):
         # initialize the list of features and labels
